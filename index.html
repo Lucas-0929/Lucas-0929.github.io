@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Helper - Home</title>
+    <style>
+        /* Reset default spacing and define the common font. */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+        /* Apply a light blue-to-green page background. */
+        body { background: linear-gradient(135deg, #dbeafe 0%, #d1fae5 100%); min-height: 100vh; }
+
+        /* Top banner artwork and primary call to action. */
+        .hero {
+            background: #fff; text-align: center;
+        }
+        .hero-image { display: block; width: 100%; height: auto; }
+        .hero-action { padding: 18px 24px; }
+        .visually-hidden {
+            position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+            overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+        }
+
+        /* Shared navigation bar and active-page indicator. */
+        .nav { display: flex; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.1); }
+        .nav a { flex: 1; text-align: center; padding: 16px 0; text-decoration: none; color: #556; font-weight: 600; border-bottom: 3px solid transparent; }
+        .nav a.active { color: #2563eb; border-bottom-color: #2563eb; }
+
+        /* Main content width, headings, and reusable service cards. */
+        .main { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+        .title { font-size: 22px; color: #1f4e79; margin-bottom: 20px; padding-left: 12px; border-left: 5px solid #2563eb; }
+
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 20px; margin-bottom: 30px; }
+        .service-types-image { display: block; width: 100%; height: auto; margin-bottom: 20px; border-radius: 16px; }
+        .card { background: #fff; border-radius: 16px; padding: 26px 22px; box-shadow: 0 4px 14px rgba(0,0,0,.1); text-align: center; }
+        .card .icon { font-size: 42px; margin-bottom: 12px; }
+        .card h3 { font-size: 18px; margin-bottom: 10px; }
+        .card p { font-size: 14px; color: #556; line-height: 1.6; }
+        .blue { border-top: 5px solid #2563eb; }
+        .green { border-top: 5px solid #22a06b; }
+        .orange { border-top: 5px solid #f59e0b; }
+
+        /* Summary row for the main advantages of the service. */
+        .features { background: #fff; border-radius: 16px; padding: 24px; display: flex; flex-wrap: wrap; gap: 24px; }
+        .feature { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .db { background: #2563eb; } .dg { background: #22a06b; } .do { background: #f59e0b; }
+
+        /* Primary button style used in the hero banner. */
+        .btn { display: inline-block; padding: 12px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+        .btn-white { background: #fff; color: #2563eb; }
+
+        /* Page footer. */
+        .footer { text-align: center; padding: 24px; color: #778; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero section: introduces the service and links to the order page. -->
+    <header class="hero">
+        <img class="hero-image" src="images/campus-helper-hero.jpg" alt="Campus Helper campus delivery illustration">
+        <h1 class="visually-hidden">Campus Helper</h1>
+        <div class="hero-action">
+            <a href="order.html" class="btn btn-white">Order Now</a >
+        </div>
+    </header>
+
+    <!-- Main site navigation. -->
+    <nav class="nav">
+        <a href="index.html" class="active">Home</a >
+        <a href="order.html">Order</a >
+        <a href="faq.html">About & FAQ</a >
+    </nav>
+
+    <main class="main">
+        <!-- Available campus errand services. -->
+        <h2 class="title">Our Services</h2>
+        <img class="service-types-image" src="images/service-types.jpg" alt="Service categories: parcel pickup, delivery, and errands">
+        <div class="cards">
+            <div class="card blue">
+                <div class="icon">📦</div>
+                <h3>Pick up Parcel</h3>
+                <p>We collect your delivery from the campus station and bring it to your dorm.</p >
+            </div>
+            <div class="card green">
+                <div class="icon">🥤</div>
+                <h3>Buy Snacks</h3>
+                <p>Drinks, snacks and bread from the campus shop, delivered to your door.</p >
+            </div>
+            <div class="card orange">
+                <div class="icon">🖨️</div>
+                <h3>Print Documents</h3>
+                <p>We print your study notes and papers, and deliver them on time.</p >
+            </div>
+        </div>
+
+        <!-- Key reasons for choosing Campus Helper. -->
+        <h2 class="title">Why Choose Us</h2>
+        <div class="features">
+            <div class="feature"><span class="dot db"></span>Inside campus only</div>
+            <div class="feature"><span class="dot dg"></span>Student runners</div>
+            <div class="feature"><span class="dot do"></span>Same-day delivery</div>
+        </div>
+    </main>
+
+    <!-- Copyright and technology footer. -->
+    <footer class="footer">
+        <p>© 2026 Campus Helper · Made with HTML & CSS</p >
+    </footer>
+
+</body>
+</html>
