@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & FAQ - Campus Helper</title>
+    <style>
+        /* Reset default spacing and set the common font. */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+        /* Page background gradient. */
+        body { background: linear-gradient(135deg, #dbeafe 0%, #d1fae5 100%); min-height: 100vh; }
+
+        /* Shared navigation bar and active-page indicator. */
+        .nav { display: flex; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.1); }
+        .nav a { flex: 1; text-align: center; padding: 16px 0; text-decoration: none; color: #556; font-weight: 600; border-bottom: 3px solid transparent; }
+        .nav a.active { color: #2563eb; border-bottom-color: #2563eb; }
+
+        /* Constrain the content width and center it on the page. */
+        .main { max-width: 700px; margin: 0 auto; padding: 30px 20px; }
+
+        /* Reusable information cards with colored topic accents. */
+        .card { background: #fff; border-radius: 16px; padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 14px rgba(0,0,0,.1); }
+        .card h2 { font-size: 19px; margin-bottom: 12px; }
+        .card p { line-height: 1.7; font-size: 15px; color: #445; margin-bottom: 10px; }
+        .blue { border-left: 5px solid #2563eb; background: #f0f6ff; }
+        .green { border-left: 5px solid #22a06b; background: #f0faf4; }
+        .orange { border-left: 5px solid #f59e0b; background: #fff9ec; }
+
+        /* Page footer. */
+        .footer { text-align: center; padding: 24px; color: #778; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+    <!-- Main site navigation. -->
+    <nav class="nav">
+        <a href="index.html">Home</a >
+        <a href="order.html">Order</a >
+        <a href="faq.html" class="active">About & FAQ</a >
+    </nav>
+
+    <main class="main">
+        <!-- Information about Campus Helper and its scope. -->
+        <div class="card blue">
+            <h2>About the Service</h2>
+            <p>Campus Helper is a student-run errand service on campus. We pick up parcels, buy snacks and print documents, so you can save time between classes.</p >
+        </div>
+
+        <!-- Service availability and operating rules. -->
+        <div class="card green">
+            <h2>Rules</h2>
+            <p>The service works only inside the campus. Orders are handled by student runners, and same-day delivery is available when the time slot is open.</p >
+        </div>
+
+        <!-- Frequently asked questions and answers. -->
+        <div class="card orange">
+            <h2>FAQ</h2>
+            <p><strong>Q: How long does delivery take?</strong><br>A: Usually within one hour after the runner accepts your order.</p >
+            <p><strong>Q: Can I order on weekends?</strong><br>A: Yes, we are open from 10:00 to 20:00 on weekends.</p >
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Campus Helper</p >
+    </footer>
+
+</body>
+</html>
